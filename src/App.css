@@ -1,0 +1,156 @@
+a {text-decoration:non !important;
+color:inherit !important;
+
+}
+input[type=radio]{
+  display:none;
+}
+.star{
+  cursor: pointer;
+}
+/* cross */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc; /* Set the background color of the box */
+  position: relative; /* Position relative for absolute positioning of the cross */
+}
+
+.cross {
+  width: 100px;
+  height: 100px;
+  position: relative;
+ transform:rotate(45deg);
+-ms-transform:rotate(45deg); /* IE 9 */
+-webkit-transform:rotate(45deg); /* Safari and Chrome */
+}
+
+.cross:before, .cross:after {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: #d00;
+}
+
+.cross:before {
+ left: 50%;
+ width: 30%;
+ margin-left: -15%;
+ height: 100%;
+}
+
+.cross:after {
+ top: 50%;
+ height: 30%;
+ margin-top: -15%;
+ width: 100%;
+}
+
+/* chart */
+.container2 {
+  height: 200px;
+  width: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  height: 50px;
+  width: 70px;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* 
+//facepile */
+
+
+.facepile {
+  display: flex;
+}
+
+.facepile-item {
+  position: relative;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.facepile-item img {
+  width: 60px; /* Adjust the size of the rounded image */
+  height: 60px; /* Adjust the size of the rounded image */
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red; /* Adjust the badge color */
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px; /* Adjust the badge size */
+  font-size: 14px; /* Adjust the font size */
+}
+
+.full {
+  display: flex;
+  height: 100vh; /* Set full height of the viewport */
+}
+
+.parent {
+  display: flex;
+  flex: 4; /* Takes 4/5 of the parent width */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  flex: 1; /* Takes 1/5 of the parent height */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  flex: 1; /* Takes 1/4 of the parent width */
+}
+
+.article {
+  flex: 3; /* Takes 3/4 of the parent width */
+}
+
+.right {
+  flex: 1; /* Takes 1/5 of the parent width */
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-1,
+.aside-2,
+.aside-3 {
+  flex: 1; /* Equal height for each aside block */
+}
